@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bg-image img{
+    background-size: cover;
+    display: block;
+    /* height: 100%; */
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.sign-in{
+    height: 650px;
+    width: 450px;
+    background-color: rgba(0,0,0,.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+   color: white;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+
+.contents p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.email{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.email input{
+    padding-left: 15px;
+    width: 80%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+.pass{
+    margin-bottom: 30px;
+}
+
+.pass input{
+    padding-left: 15px;
+    width: 80%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+.btn button{
+    width: 80%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+.remember-me{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+
+.help{
+    margin-left: 121px;
+}
+
+.new-user{
+    margin-top: 40px;
+}
+
+.new-user a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.para{
+    width: 90%;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+.para a{
+    text-decoration: none;
+    color: blue;
+}
+
+span{
+    color: #b3b3b3;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 18px;
+    
+}
+
+.logo path{
+    fill: #e50914;
+    
+}
+
+
+
+@media (max-width: 450px){
+    body{
+        background-color: black;
+        overflow-x: hidden;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    .bg-image img{
+        display: none;
+    }
+    .sign-in{
+        background-color: black;
+        z-index: -1;
+    }
+    .contents{
+        margin-top: 100px;
+    }
+    .btn button{
+        width: 85%;
+    }
+}
+
+@media  (max-width:400px){
+    *{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .contents{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width:320){
+    *{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .contents{
+        margin-left: 150px;
+    }
+}
